@@ -5,7 +5,8 @@ import com.badlogic.gdx.math.Vector2;
 public class Ball {
     public Vector2 position = new Vector2();
     public Vector2 velocity = new Vector2();
-    public float reboundSpeed = 12;
+    public float[] reboundSpeeds = {12,10,8,6,4};
+    public Vector2 size = new Vector2();
     public int type;
 
     Ball(){
