@@ -23,9 +23,11 @@ public class GameScreen extends MyGameScreen {
     Player player;
 
     float newBallTimer;
-    public GameScreen(Game game){
+
+    GameScreen(Game game){
         super(game);
     }
+
     @Override
     public void show () {
         batch = new SpriteBatch();
