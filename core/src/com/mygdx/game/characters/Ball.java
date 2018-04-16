@@ -6,6 +6,7 @@ public class Ball {
     public Vector2 position = new Vector2();
     public Vector2 velocity = new Vector2();
     public float reboundSpeed = 12;
+    public int type;
 
     Ball(){
         position.x = 0;
@@ -14,11 +15,12 @@ public class Ball {
         velocity.y = 1;
     }
 
-    public Ball(float px, float py, float vx, float vy){
+    public Ball(float px, float py, float vx, float vy,int type){
         position.x = px;
         position.y = py;
         velocity.x = vx;
         velocity.y = vy;
+        this.type = type;
     }
 
     Ball(Vector2 position, Vector2 velocity){
